@@ -1,19 +1,3 @@
-/*terraform {
-  backend "s3" {
-    bucket         = "nshaelin-terraform-state"
-    key            = "terraform.tfstate"
-    region         = "af-south-1"
-    dynamodb_table = "nshaelin-terraform-lock"
-  }
-}
-*/
-/*
-provider "aws" {
-  region = var.aws_region
-
-  profile = var.aws_profile
-}*/
-
 data "aws_ami" "al2" {
   most_recent = true
   filter {
